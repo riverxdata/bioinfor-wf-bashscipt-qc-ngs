@@ -2,13 +2,13 @@
 set -euo pipefail
 
 # init pixi
-eval "$(pixi shell-hook)"
+eval "$(pixi shell-hook --manifest-path analysis)"
 
 # prepare outout
 mkdir -p $outdir
 
 # run fastqc
-fastqc $fastqc_dir/*fq -o $outdir
+fastqc $fastq_dir/*fq -o $outdir
 
 # run multiqc
 multiqc $outdir -o $outdir --force

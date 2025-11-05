@@ -1,6 +1,6 @@
 {
   "name": "Thanh-Giang Tan Nguyen 09/07/2025 11:05:01 PM",
-  "fastqc_dir": "analysis/tests/data",
+  "fastq_dir": "analysis/tests/data",
   "cpu": 1,
   "memory": 2,
   "time": 3600,
